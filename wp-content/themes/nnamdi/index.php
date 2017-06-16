@@ -35,6 +35,14 @@ get_header(); ?>
         <?php get_sidebar(); ?>
       </aside>
     </div>
+    <div class="row">
+      <div class="col-md-7 col-lg-7">
+        
+      </div>
+      <div class="col-md-5 col-lg-5">
+        <h1>Shoe model</h1>
+      </div>
+    </div>
   </div>
 </main>
 <?php get_footer(); ?>
