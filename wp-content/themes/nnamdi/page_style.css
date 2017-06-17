@@ -1,0 +1,34 @@
+
+body {
+    font-family: Monospace;
+    background-color: #000;
+    color: #fff;
+    margin: 0px;
+    overflow: hidden;
+}
+
+#info {
+    color: #fff;
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    text-align: center;
+    z-index: 100;
+    display: block;
+}
+
+#btn1 {
+    background: #5dff00;
+    background-color: powderblue;
+
+}
+
+#BigButton {
+}
+
+#info a, .button {
+    color: #5dff00;
+    font-weight: bold;
+    text-decoration: underline;
+    cursor: pointer
+}

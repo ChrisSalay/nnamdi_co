@@ -10,12 +10,14 @@
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
-<meta charset="<?php bloginfo( 'charset' ); ?>">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-<script type="text/javascript" src="/three.js-master/src/Three.js"></script>
-<script type="text/javascript" src="main.js"></script>
-<?php wp_head(); ?>
+  <meta charset="<?php bloginfo( 'charset' ); ?>">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+  <script type="text/javascript" src="/build/three.js"></script>
+  <script src="js/Detector.js"></script>
+  <script src="js/libs/stats.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="page_style.css">
+  <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?> >
 <div class="wrapper">
