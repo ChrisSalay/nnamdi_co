@@ -13,10 +13,10 @@
   <meta charset="<?php bloginfo( 'charset' ); ?>">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-  <script type="text/javascript" src="/wp-content/themes/nnamdi/build/three.js"></script>
-  <script src="/wp-content/themes/nnamdi/js/Detector.js"></script>
-  <script src="/wp-content/themes/nnamdi/js/libs/stats.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="/wp-content/themes/nnamdi/page_style.css">
+  <script type="text/javascript" src="/build/three.js"></script>
+  <script src="js/Detector.js"></script>
+  <script src="js/libs/stats.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="page_style.css">
   <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?> >
