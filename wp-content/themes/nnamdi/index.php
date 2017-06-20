@@ -36,7 +36,7 @@ get_header(); ?>
       </aside>
     </div>
     <div class="row">
-      <div class="col-md-7 col-lg-7">
+      <div class="col-md-7 col-lg-7" id="model">
         <button id="redBtn" class="btn btn-danger btn1">Red</button>
         <button id="greenBtn" class="btn btn-success">Green</button>
         <button id="blueBtn" class="btn btn-primary">Blue</button>
@@ -52,7 +52,7 @@ get_header(); ?>
     
             var windowHalfX = window.innerWidth / 2;
             var windowHalfY = window.innerHeight / 2;
-            var WIDTH = 4000, HEIGHT = 300;
+            var WIDTH = jQuery('#model').width(), HEIGHT = jQuery('#model').height();
     
             var redObj, greenObj, blueObj, purpleObj, goldObj, transObj, pinkObj;
     
@@ -61,7 +61,8 @@ get_header(); ?>
     
             function init() {
     
-                container = document.createElement('div');
+                //container = document.createElement('div');
+                container = jQuery("div#model");
                 document.body.appendChild(container);
     
                 camera = new THREE.PerspectiveCamera(90, window.innerWidth / window.innerHeight, 1, 2000);
@@ -81,37 +82,37 @@ get_header(); ?>
                 var objectLoader1 = new THREE.ObjectLoader();
                 objectLoader1.load("/wp-content/themes/nnamdi/blue_Shoe.json", function (obj) {
                     blueObj = obj;
-    //                scene.add(blueObj);
+                   scene.add(blueObj);
                 });
     
                 var objectLoader2 = new THREE.ObjectLoader();
                 objectLoader2.load("/wp-content/themes/nnamdi/red_Shoe.json", function (obj) {
                     redObj = obj;
-    //                scene.add(redObj);
+                   scene.add(redObj);
                 });
     
                 var objectLoader3 = new THREE.ObjectLoader();
                 objectLoader3.load("/wp-content/themes/nnamdi/green_Shoe.json", function (obj) {
                     greenObj = obj;
-    //                scene.add(greenObj);
+                    scene.add(greenObj);
                 });
     
                 var objectLoader4 = new THREE.ObjectLoader();
                 objectLoader4.load("/wp-content/themes/nnamdi/pink_Shoe.json", function (obj) {
                     pinkObj = obj;
-    //                scene.add(pinkObj);
+                   scene.add(pinkObj);
                 });
     
                 var objectLoader5 = new THREE.ObjectLoader();
                 objectLoader5.load("/wp-content/themes/nnamdi/purple_Shoe.json", function (obj) {
                     purpleObj = obj;
-    //                scene.add(purpleObj);
+                  scene.add(purpleObj);
                 });
     
                 var objectLoader6 = new THREE.ObjectLoader();
                 objectLoader6.load("/wp-content/themes/nnamdi/gold_Shoe.json", function (obj) {
                     goldObj = obj;
-    //                scene.add(goldObj);
+                    scene.add(goldObj);
                 });
     
                 var objectLoader7 = new THREE.ObjectLoader();
