@@ -52,10 +52,10 @@ get_header(); ?>
     
             var windowHalfX = window.innerWidth / 2;
             var windowHalfY = window.innerHeight / 2;
-            var WIDTH = jQuery('#model').width(), HEIGHT = jQuery('#model').height();
+            var WIDTH = jQuery('#model').width(), HEIGHT = jQuery('#model').height()
     
             var redObj, greenObj, blueObj, purpleObj, goldObj, transObj, pinkObj;
-    
+
             init();
             animate();
     
@@ -79,43 +79,43 @@ get_header(); ?>
     
                 // BEGIN Clara.io JSON loader code
                 var objectLoader1 = new THREE.ObjectLoader();
-                objectLoader1.load("blue_Shoe.json", function (obj) {
+                objectLoader1.load("/wp-content/themes/nnamdi/blue_Shoe.json", function (obj) {
                     blueObj = obj;
-                   scene.add(blueObj);
+    //                scene.add(blueObj);
                 });
     
                 var objectLoader2 = new THREE.ObjectLoader();
-                objectLoader2.load("red_Shoe.json", function (obj) {
+                objectLoader2.load("/wp-content/themes/nnamdi/red_Shoe.json", function (obj) {
                     redObj = obj;
-                   scene.add(redObj);
+    //                scene.add(redObj);
                 });
     
                 var objectLoader3 = new THREE.ObjectLoader();
-                objectLoader3.load("green_Shoe.json", function (obj) {
+                objectLoader3.load("/wp-content/themes/nnamdi/green_Shoe.json", function (obj) {
                     greenObj = obj;
-                    scene.add(greenObj);
+    //                scene.add(greenObj);
                 });
     
                 var objectLoader4 = new THREE.ObjectLoader();
-                objectLoader4.load("pink_Shoe.json", function (obj) {
+                objectLoader4.load("/wp-content/themes/nnamdi/pink_Shoe.json", function (obj) {
                     pinkObj = obj;
-                   scene.add(pinkObj);
+    //                scene.add(pinkObj);
                 });
     
                 var objectLoader5 = new THREE.ObjectLoader();
-                objectLoader5.load("purple_Shoe.json", function (obj) {
+                objectLoader5.load("/wp-content/themes/nnamdi/purple_Shoe.json", function (obj) {
                     purpleObj = obj;
-                  scene.add(purpleObj);
+    //                scene.add(purpleObj);
                 });
     
                 var objectLoader6 = new THREE.ObjectLoader();
-                objectLoader6.load("gold_Shoe.json", function (obj) {
+                objectLoader6.load("/wp-content/themes/nnamdi/gold_Shoe.json", function (obj) {
                     goldObj = obj;
-                    scene.add(goldObj);
+    //                scene.add(goldObj);
                 });
     
                 var objectLoader7 = new THREE.ObjectLoader();
-                objectLoader7.load("transparent.json", function (obj) {
+                objectLoader7.load("/wp-content/themes/nnamdi/transparent.json", function (obj) {
                     transObj = obj;
                     scene.add(transObj);
                 });
