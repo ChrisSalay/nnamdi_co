@@ -35,8 +35,8 @@ get_header(); ?>
         <?php get_sidebar(); ?>
       </aside>
     </div>
+    
     <div class="row">
-      <div class="col-md-7 col-lg-7" id="model">
         <button id="redBtn" class="btn btn-danger btn1">Red</button>
         <button id="greenBtn" class="btn btn-success">Green</button>
         <button id="blueBtn" class="btn btn-primary">Blue</button>
@@ -52,7 +52,7 @@ get_header(); ?>
     
             var windowHalfX = window.innerWidth / 2;
             var windowHalfY = window.innerHeight / 2;
-            var WIDTH = jQuery('#model').width(), HEIGHT = jQuery('#model').height()
+            var WIDTH = 4000, HEIGHT = 300
     
             var redObj, greenObj, blueObj, purpleObj, goldObj, transObj, pinkObj;
 
@@ -60,8 +60,9 @@ get_header(); ?>
             animate();
     
             function init() {
-    
+                
                 container = document.createElement('div');
+                jQuery(container).addClass('row');
                 document.body.appendChild(container);
     
                 camera = new THREE.PerspectiveCamera(90, window.innerWidth / window.innerHeight, 1, 2000);
@@ -235,10 +236,6 @@ get_header(); ?>
             }
           
         </script>
-      </div>
-      <div class="col-md-5 col-lg-5">
-        <h1>Shoe model</h1>
-      </div>
     </div>
   </div>
 </main>
