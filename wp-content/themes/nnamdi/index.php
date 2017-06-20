@@ -61,8 +61,7 @@ get_header(); ?>
     
             function init() {
     
-                //container = document.createElement('div');
-                container = jQuery("div#model");
+                container = document.createElement('div');
                 document.body.appendChild(container);
     
                 camera = new THREE.PerspectiveCamera(90, window.innerWidth / window.innerHeight, 1, 2000);
